@@ -1,0 +1,8 @@
+{
+  "name": "PromoPilot - AI Marketing for Small Businesses",
+  "description": "Create high-converting social media captions, advertisements, promotional posters, and WhatsApp marketing messages tailored for small businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

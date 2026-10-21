@@ -1,0 +1,121 @@
+import { PromoTemplate } from '../types';
+
+export const PROMO_TEMPLATES: PromoTemplate[] = [
+  {
+    id: 'payday-madness',
+    title: 'Payday Weekend Madness',
+    category: 'Flash Deals',
+    industry: 'all',
+    description: 'Capitalize on payday excitement with a high-urgency multi-item or spend-and-save deal.',
+    badge: 'PAYDAY WEEKEND ONLY',
+    headline: 'TREAT YOURSELF THIS PAYDAY',
+    offer: 'SPEND R500 & GET R100 OFF',
+    subtext: 'Your hard work deserves a reward! Use code PAYDAY100 or show this message in-store. Valid until Sunday midnight.',
+    whatsappMessage: '💰 *PAYDAY SPECIAL AT {{businessName}}!* 💰\n\nHey {{name}}, you worked hard this month—now it is time to treat yourself! 🎉\n\n✨ *Spend R500 or more this weekend and get R100 instantly OFF your total!*\n\n📅 _Valid Friday to Sunday only._\n\nReply *CLAIM* to reserve your promo code or drop by today!',
+    tags: ['Payday', 'Spend & Save', 'High Urgency']
+  },
+  {
+    id: 'buy1-get1',
+    title: 'BOGO (Buy 1, Get 1 50% Off)',
+    category: 'Volume Booster',
+    industry: 'retail',
+    description: 'Double customer basket size by offering the second item at half price.',
+    badge: 'DOUBLE THE VALUE',
+    headline: 'BUY 1, GET 2ND HALF PRICE',
+    offer: '50% OFF YOUR 2ND ITEM',
+    subtext: 'Mix & match across all selected ranges. The perfect excuse to bring a friend or stock up on your favorites.',
+    whatsappMessage: '🛍️ *DOUBLE UP DEAL at {{businessName}}!* 🛍️\n\nWhy settle for one when you can grab two?\n\n🔥 *Buy any item and get your 2nd item for 50% OFF!* 🔥\n\nBring a friend, grab a gift, or treat yourself twice.\n\n📍 Visit us in-store or tap the link to shop before favorite styles sell out!',
+    tags: ['BOGO', 'Retail', 'Volume']
+  },
+  {
+    id: 'tuesday-treat',
+    title: 'Slow Day Booster (Tasty Tuesday)',
+    category: 'Traffic Boosters',
+    industry: 'food',
+    description: 'Turn your slowest weekday into a bustling crowd magnet with an irresistible combo.',
+    badge: 'MIDWEEK SPECIAL',
+    headline: 'TASTY TUESDAY COMBO',
+    offer: 'FREE CAPPUCCINO WITH ANY MEAL',
+    subtext: 'Beat the midweek slump! Order any breakfast bowl, burger, or pizza and receive a complimentary artisan cappuccino.',
+    whatsappMessage: '☕ *Tuesdays just got way better at {{businessName}}!* ☕\n\nFeeling the midweek slump? We got your back.\n\n🍕 Order any main meal today and your *Freshly Brewed Cappuccino is 100% on us!*\n\nAvailable all day Tuesday for sit-down & takeaway.\n\nSend us a message or pop in to say howzit! 👋',
+    tags: ['Food', 'Midweek', 'Freebie']
+  },
+  {
+    id: 'first-time-vip',
+    title: 'New Customer Welcome Voucher',
+    category: 'Customer Acquisition',
+    industry: 'salon',
+    description: 'Lower the barrier for first-time visitors with an attractive introductory discount.',
+    badge: 'NEW CLIENT EXCLUSIVE',
+    headline: 'WELCOME TO THE FAMILY',
+    offer: '20% OFF YOUR 1ST VISIT',
+    subtext: 'Experience five-star service tailored for you. Book your first appointment today and enjoy 20% off all standard services.',
+    whatsappMessage: '✨ *Special Welcome from {{businessName}}!* ✨\n\nHi there! We would love to welcome you to our studio with an exclusive introductory gift:\n\n💇 *Enjoy 20% OFF your very first appointment with us!*\n\nFrom head-turning styles to pure relaxation, let us pamper you.\n\nReply *BOOK* or WhatsApp us directly to secure your preferred time slot this week.',
+    tags: ['New Client', 'Salon', 'Acquisition']
+  },
+  {
+    id: 'emergency-callout',
+    title: 'Zero Call-Out Fee Service Week',
+    category: 'Home & Trades',
+    industry: 'trades',
+    description: 'Remove friction for homeowners needing plumbing, electrical or handyman fixes.',
+    badge: 'TRUSTED LOCAL PROS',
+    headline: 'ZERO CALL-OUT FEES THIS WEEK',
+    offer: 'FREE ON-SITE ASSESSMENT',
+    subtext: 'Got a leaking tap, electrical fault, or home repair waiting? Our certified team is ready. No call-out charges for local callouts.',
+    whatsappMessage: '🔧 *Home Repair Alert from {{businessName}}!* 🔧\n\nGot that annoying leak, flickering light, or repair job you have been putting off?\n\n⚡ *This week only: R0 Call-Out Fee on all local bookings!* ⚡\n\nPay only for the work completed. Fast, certified, and guaranteed.\n\nReply with your suburb or call us directly to book a pro today.',
+    tags: ['Trades', 'Zero Callout', 'Trust']
+  },
+  {
+    id: 'fitness-kickstart',
+    title: '30-Day Transformation Challenge',
+    category: 'Memberships',
+    industry: 'fitness',
+    description: 'Inspire people to take action with a bundled fitness challenge and community support.',
+    badge: 'NEW COHORT STARTING',
+    headline: 'START YOUR 30-DAY RESET',
+    offer: 'SAVE R300 + FREE MEAL GUIDE',
+    subtext: 'No contracts, no intimidation. Includes 12 trainer-led sessions, body composition scans, and weekly progress coaching.',
+    whatsappMessage: '🔥 *Ready to feel energetic and strong again?* 🔥\n\nThe 30-Day Kickstart at *{{businessName}}* is officially open for registrations!\n\n💪 What you get:\n• 12 coached group workout sessions\n• Personalized nutrition & meal prep blueprint\n• 1-on-1 accountability coach\n• *Save R300 when you register before Friday*\n\nReply *I AM IN* to lock in your discounted spot!',
+    tags: ['Fitness', 'Challenge', 'High Value']
+  },
+  {
+    id: 'car-spa-valet',
+    title: 'Full Vehicle Detail + Polish Combo',
+    category: 'Automotive',
+    industry: 'automotive',
+    description: 'Give car owners the showroom shine feeling at an unbeatable package price.',
+    badge: 'SHOWROOM FINISH',
+    headline: 'GIVE YOUR RIDE THE ROYAL SPA',
+    offer: 'FULL VALET COMBO ONLY R249',
+    subtext: 'Deluxe high-pressure snow foam wash, interior deep shampoo, rim restoration, and protective wax coating. Drive away proud.',
+    whatsappMessage: '🚗 *Your car deserves that new car feel again!* 🚗\n\nBring your vehicle into *{{businessName}}* this week for our famous *Deluxe Spa Valet*:\n\n✨ Snow foam wash & scratch-free hand polish\n✨ Deep interior steam clean & vacuum\n✨ Tire shine & dashboard UV protection\n\n💰 *All for only R249 (Normally R380)!*\n\nDrive in today or message us to reserve your bay.',
+    tags: ['Car Wash', 'Auto', 'Combo']
+  },
+  {
+    id: 'vip-appreciation',
+    title: 'Secret VIP Loyalty Thank You',
+    category: 'Retention',
+    industry: 'all',
+    description: 'Make existing customers feel like royalty with an unadvertised private discount.',
+    badge: 'VIP PRIVATE ACCESS',
+    headline: 'JUST FOR OUR TOP CLIENTS',
+    offer: 'SECRET R150 DISCOUNT VOUCHER',
+    subtext: 'You have been an amazing supporter of our local business. Here is a private voucher for your next order over R400. Use code VIP150.',
+    whatsappMessage: '🌟 *A sincere Thank You from all of us at {{businessName}}!* 🌟\n\nBecause you are one of our favorite regulars, we wanted to surprise you with a private gift:\n\n🎁 *Here is a Secret R150 Voucher for your next visit!* (Minimum spend R400).\n\nShow this WhatsApp message at checkout.\n\nThank you for supporting local—we cannot wait to see you again soon! ❤️',
+    tags: ['Loyalty', 'Retention', 'VIP']
+  },
+  {
+    id: 'early-bird-tickets',
+    title: 'Early Bird Workshop / Event Pass',
+    category: 'Events',
+    industry: 'events',
+    description: 'Drive upfront cashflow and fill event seats early with an early-bird incentive.',
+    badge: 'FIRST 30 SEATS ONLY',
+    headline: 'EARLY BIRD PASSES NOW LIVE',
+    offer: '35% OFF EARLY BIRD TICKETS',
+    subtext: 'Join us for an unforgettable evening. High demand anticipated—early bird pricing strictly ends once 30 seats are claimed.',
+    whatsappMessage: '🎟️ *TICKETS JUST WENT LIVE for {{businessName}}!* 🎟️\n\nLock in your spot before anyone else and save big:\n\n⚡ *Early Bird Pass: 35% OFF the standard door price!*\n\nOnly 30 tickets released at this price tier. Once they are gone, prices increase.\n\nTap below to book or reply *RESERVE* right now to secure yours!',
+    tags: ['Events', 'Early Bird', 'FOMO']
+  }
+];
