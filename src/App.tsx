@@ -5,6 +5,7 @@ import { PosterStudio } from './components/PosterStudio';
 import { WhatsAppHub } from './components/WhatsAppHub';
 import { TemplatesLibrary } from './components/TemplatesLibrary';
 import { SavedLibrary } from './components/SavedLibrary';
+import { GmailMarketingHub } from './components/GmailMarketingHub';
 import { PricingModal } from './components/PricingModal';
 import {
   GeneratedCampaign,
@@ -77,6 +78,9 @@ export default function App() {
     aspectRatio: '1:1',
     theme: 'midnight-cyber',
   });
+
+  // Active campaign state for Gmail & Poster
+  const [activeCampaign, setActiveCampaign] = useState<GeneratedCampaign | null>(null);
 
   // Prefill state for Campaign Studio
   const [studioPrefill, setStudioPrefill] = useState<{
@@ -186,6 +190,10 @@ export default function App() {
             onOpenPricing={() => setIsPricingOpen(true)}
             onSaveCampaign={handleSaveCampaign}
             onOpenInPosterStudio={handleOpenInPosterStudioFromCampaign}
+            onOpenInGmail={(camp) => {
+              setActiveCampaign(camp);
+              setActiveTab('gmail');
+            }}
             currency={currency}
             prefilledOffer={studioPrefill.offer}
             prefilledIndustry={studioPrefill.industry}
@@ -203,6 +211,14 @@ export default function App() {
         {activeTab === 'whatsapp' && (
           <WhatsAppHub
             subscription={subscription}
+            onOpenPricing={() => setIsPricingOpen(true)}
+          />
+        )}
+
+        {activeTab === 'gmail' && (
+          <GmailMarketingHub
+            subscription={subscription}
+            currentCampaign={activeCampaign}
             onOpenPricing={() => setIsPricingOpen(true)}
           />
         )}

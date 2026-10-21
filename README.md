@@ -24,7 +24,8 @@
 
 ## ✨ Features
 
-- **🚀 Multi-Channel Campaign Studio:** Generates social captions (with hooks, hashtags & CTAs), paid ad copy (Meta & Google ads), and WhatsApp broadcast messages in one pass.
+- **🚀 Multi-Channel Campaign Studio:** Generates social captions (with hooks, hashtags & CTAs), paid ad copy (Meta & Google ads), WhatsApp broadcast messages, and email newsletters in one pass.
+- **✉️ Gmail Marketing Hub:** Connect your Google account with OAuth to compose, draft, and send promotional newsletters directly from Gmail, complete with responsive HTML previews, sent history, and explicit user confirmation dialogs.
 - **🎨 Live 1080p Poster & Flyer Studio:** Client-side HTML5 canvas poster builder supporting 1:1 (Square), 9:16 (Story/Status), and 16:9 (Landscape) with 7 vibrant themes and instant PNG/JPEG download.
 - **💬 WhatsApp Broadcast Hub:** Compose and preview messages in a realistic phone chat simulator with WhatsApp formatting (`*bold*`, `_italics_`, emojis) and 1-click `wa.me` links.
 - **📂 10+ Ready-Made Templates:** Battle-tested templates for payday sales, slow weekday boosters, BOGO offers, VIP customer rewards, and flash clearances.

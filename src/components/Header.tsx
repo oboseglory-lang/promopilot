@@ -7,7 +7,8 @@ import {
   Bookmark,
   Zap,
   FolderOpen,
-  Crown
+  Crown,
+  Mail
 } from 'lucide-react';
 import { UserSubscription } from '../types';
 
@@ -102,6 +103,18 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <MessageSquare className="w-4 h-4 text-green-400" />
               WhatsApp Hub
+            </button>
+
+            <button
+              onClick={() => setActiveTab('gmail')}
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1.5 ${
+                activeTab === 'gmail'
+                  ? 'bg-indigo-600/30 text-indigo-300 border border-indigo-500/30'
+                  : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+              }`}
+            >
+              <Mail className="w-4 h-4 text-red-400" />
+              Gmail Marketing
             </button>
 
             <button
@@ -231,6 +244,16 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             WhatsApp Hub
+          </button>
+          <button
+            onClick={() => setActiveTab('gmail')}
+            className={`px-3 py-1.5 rounded-md whitespace-nowrap ${
+              activeTab === 'gmail'
+                ? 'bg-indigo-600 text-white font-semibold'
+                : 'text-slate-400'
+            }`}
+          >
+            Gmail Marketing
           </button>
           <button
             onClick={() => setActiveTab('templates')}

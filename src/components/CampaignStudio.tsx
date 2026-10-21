@@ -12,7 +12,8 @@ import {
   MessageSquare,
   Flame,
   Tag,
-  Share2
+  Share2,
+  Mail
 } from 'lucide-react';
 import { GeneratedCampaign, IndustryId, UserSubscription } from '../types';
 import { INDUSTRIES } from '../data/industries';
@@ -23,6 +24,7 @@ interface CampaignStudioProps {
   onOpenPricing: () => void;
   onSaveCampaign: (campaign: GeneratedCampaign) => void;
   onOpenInPosterStudio: (campaign: GeneratedCampaign) => void;
+  onOpenInGmail?: (campaign: GeneratedCampaign) => void;
   currency: 'ZAR' | 'USD';
   prefilledOffer?: string;
   prefilledIndustry?: IndustryId;
@@ -34,6 +36,7 @@ export const CampaignStudio: React.FC<CampaignStudioProps> = ({
   onOpenPricing,
   onSaveCampaign,
   onOpenInPosterStudio,
+  onOpenInGmail,
   currency,
   prefilledOffer,
   prefilledIndustry,
@@ -398,6 +401,16 @@ export const CampaignStudio: React.FC<CampaignStudioProps> = ({
                 </div>
 
                 <div className="flex items-center gap-2">
+                  {onOpenInGmail && (
+                    <button
+                      onClick={() => onOpenInGmail(currentCampaign)}
+                      className="px-3 py-1.5 rounded-lg bg-red-50 hover:bg-red-100 text-red-700 text-xs font-semibold transition-colors flex items-center gap-1.5 border border-red-200"
+                    >
+                      <Mail className="w-3.5 h-3.5 text-red-600" />
+                      <span>Send via Gmail</span>
+                    </button>
+                  )}
+
                   <button
                     onClick={handleSave}
                     className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors flex items-center gap-1.5 ${
